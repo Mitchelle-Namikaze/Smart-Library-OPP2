@@ -1,138 +1,16 @@
-# Smart Library Management System
+# React + Vite
 
-## Overview
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-The Smart Library Management System is a full-stack web application developed using FastAPI, PostgreSQL, SQLAlchemy, and React. The system helps libraries manage books, users, borrowing activities, reservations, and overdue records through a modern role-based platform.
+Currently, two official plugins are available:
 
-## Features
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-### Authentication
+## React Compiler
 
-* User Login
-* Role-Based Access Control
-* Session Persistence
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-### User Management
+## Expanding the ESLint configuration
 
-* Register Users
-* Assign Roles (Admin, Librarian, Student)
-* View User Records
-
-### Book Management
-
-* Add Books
-* Edit Books
-* Delete Books
-* Search Books
-* Availability Tracking
-
-### Borrowing System
-
-* Borrow Books
-* Return Books
-* Due Date Tracking
-* Overdue Monitoring
-
-### Reservation System
-
-* Create Reservations
-* Approve Reservations
-* Reject Reservations
-* Automatic Borrow Record Creation After Approval
-
-### Dashboard
-
-* Total Books
-* Available Books
-* Borrowed Books
-* Total Users
-* Reservation Statistics
-
-## Technologies Used
-
-### Backend
-
-* FastAPI
-* Python
-* SQLAlchemy
-* PostgreSQL
-
-### Frontend
-
-* React
-* Axios
-* CSS
-
-### Documentation
-
-* Swagger UI
-* ReDoc
-
-## Project Structure
-
-backend/
-├── models/
-├── routes/
-├── schemas/
-├── database.py
-├── main.py
-
-frontend/
-├── src/
-│ ├── pages/
-│ ├── App.jsx
-│ ├── App.css
-│ └── main.jsx
-
-## Installation
-
-### Backend
-
-1. Create virtual environment
-
-python -m venv venv
-
-2. Activate virtual environment
-
-Windows:
-
-venv\Scripts\activate
-
-3. Install dependencies
-
-pip install -r requirements.txt
-
-4. Run backend
-
-uvicorn main:app --reload
-
-### Frontend
-
-1. Install dependencies
-
-npm install
-
-2. Run frontend
-
-npm run dev
-
-## API Documentation
-
-Swagger UI:
-
-http://127.0.0.1:8000/docs
-
-ReDoc:
-
-http://127.0.0.1:8000/redoc
-
-## Author
-
-Mitchelle Kamanda
-Group 1
-
-## Academic Project
-
-Object Oriented Programming II
-
-Smart Library Management System
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
